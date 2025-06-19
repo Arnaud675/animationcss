@@ -1,0 +1,254 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    background-color: rgb(123, 206, 234);
+
+    display: flex;
+
+    .textlogo {
+        padding-top: 25px;
+       
+    }
+
+
+    .imgclass {
+         height: 70px;
+         padding-left: 40px;
+         border-radius: 50px;
+    }
+
+    .bartop {
+        display: flex;
+        gap: 30px;
+        padding: 30px;
+        padding-left: 120px;
+        gap: 60px;
+
+        li { 
+            list-style-type: none;
+                
+            }
+        
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            
+        }
+
+        a:hover {
+            background-attachment: fixed;
+            background-color: blue;
+            border-radius: 8px;
+            border: 1px solid black;
+            
+        }
+    }
+}
+
+
+.btn1 {
+    background-color: black;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: white;
+    height: 30px;
+    width: 10%;
+    margin: auto;
+}
+
+
+button:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px solid;
+    border: 2px solid black;
+}
+
+
+.square {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    position: relative;
+    animation: deplacement 2s infinite; 
+}
+
+@keyframes deplacement {
+   from {
+    left: 0;
+   }
+
+   to {
+    left: 96%;
+   }
+
+    
+}
+
+
+.imd {
+    animation: tourner linear 2s infinite;
+    height: 120px;
+    width: 120px;
+    margin: 20px 300px;
+
+}
+
+@keyframes tourner {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
+
+.fondu {
+    opacity: 0;
+    animation: fadeInOut 1s ease-in-out;
+    font-size: 40px;
+}
+
+
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#btn2 {
+    background-color: blue;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    margin: 20px 500px;
+}
+
+#btn2:active {
+    background-color: black;
+    padding: 12px;
+    font-size: 21px;
+    border-radius: 10px;
+    border: black solid;
+    color: white;
+}
+
+
+.circle {
+   width: 50px;
+   height: 50px;
+   border: 5px solid #062ffd;
+   border-top: 5px solid transparent;
+   margin-left: 500px;
+   border-radius: 50px;
+   animation: chargement 2s linear infinite;
+}
+
+
+    @keyframes chargement {
+         0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    } 
+
+}
+
+
+.vertical {
+    text-align: center;
+    animation: scroll-vertical 1s linear infinite;
+    transform: translateY(100%);
+    white-space: nowrap;
+}
+
+ @keyframes scroll-vertical {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+ }
+
+
+ .zoom {
+    width: 70%;
+    height: 400px;
+    margin: 20px 200px;
+    transition: transform 1s ease;
+ }
+
+ .zoom:hover {
+    transform: scale(1.2);
+ }
+
+
+ .ligth {
+    font-size: 20px;
+    text-align: center;
+   
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+ .ligth {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  color: red;
+  
+}
+
+
+.element {
+  position: relative;
+  left: 20px; /* Décalage de 20px vers la droite */
+  top: 10px; /* Décalage de 10px vers le bas */
+   float: left;
+}
+
+
+
+.element {
+  position: absolute;
+  left: 0;
+  transition: transform 0.5s ease;
+  transform: translateX(-100%); /* Caché à gauche */
+}
+
+.element.visible {
+  transform: translateX(0); /* Apparaît */
+}
+ 
+
+
+
+
+
+
+
+
+
